@@ -35,7 +35,7 @@
     "webpack-dev-server": "^1.16.1"
   },
   "scripts": {
-    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base src/",
+    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --host 0.0.0.0 --content-base src/",
     "build" : "webpack -p"
   }
 }
