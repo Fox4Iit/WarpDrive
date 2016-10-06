@@ -17,7 +17,8 @@ File: Topbar,Left-sidebar,Right-sidebar
   top: 0;
   z-index: 999;
   .topbar-left {
-    background: @white;
+    background: @primary;
+    border-bottom: 1px solid @primary;
     float: left;
     height: 70px;
     position: relative;
@@ -27,7 +28,7 @@ File: Topbar,Left-sidebar,Right-sidebar
 }
 
 .logo {
-  color: @primary !important;
+  color: @white !important;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: .02em;
@@ -37,10 +38,14 @@ File: Topbar,Left-sidebar,Right-sidebar
     margin: 0px auto;
     text-align: center;
   }
+
+  i {
+    color: @white;
+  }
 }
 
 .navbar-default {
-  background-color: @dark;
+  background-color: @primary;
   border-radius: 0px;
   border: none;
   margin-bottom: 0px;
@@ -100,7 +105,7 @@ File: Topbar,Left-sidebar,Right-sidebar
 
 .notifi-title {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  color: @white;
+  color: #000000;
   font-size: 16px;
   font-weight: 400;
   padding: 5px 0px 10px;
@@ -287,6 +292,7 @@ body.fixed-left {
 
 #sidebar-menu {
   background-color: @white;
+  padding-top: 30px;
   padding-bottom: 50px;
   width: 100%;
   a {
@@ -449,10 +455,6 @@ body.fixed-left {
   .user-info-span {
     display: inline-block;
     padding-left: 10px;
-
-    h5 {
-      color: @dark;
-    }
   }
 }
 
@@ -657,7 +659,7 @@ body.fixed-left {
 .side-bar {
   -moz-transition: all 200ms ease-out;
   -webkit-transition: all 200ms ease-out;
-  background-color: darken(@dark,5%);
+  background-color: @white;
   box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
   display: block;
   overflow-y: auto;
@@ -668,8 +670,6 @@ body.fixed-left {
   .nav.nav-tabs + .tab-content {
     margin-bottom: 0px;
     padding: 20px;
-    background-color: transparent;
-    border: 0;
   }
 
   .tabs li.tab a {
@@ -678,6 +678,7 @@ body.fixed-left {
 }
 
 .right-bar {
+  background: @white !important;
   position: fixed !important;
   z-index: 99 !important;
   h4 {
@@ -719,7 +720,7 @@ body.fixed-left {
   }
   .list-group-item {
     span.name {
-      color: fade(@white,60%);
+      color: #707780;
       display: inline-block;
       float: left;
       overflow: hidden;

@@ -174,7 +174,7 @@
         }]
     }, {
         'key': 'Series 2',
-        'color': "#3bafda",
+        'color': "#00b19d",
         'values': [{
             'label': 'Group A',
             'value': 25.307646510375

@@ -35,14 +35,14 @@ $( document ).ready(function() {
             height: '165',
             barWidth: '10',
             barSpacing: '3',
-            barColor: '#3bafda'
+            barColor: '#00b19d'
         });
 
         $('#sparkline3').sparkline([20, 40, 30, 10], {
             type: 'pie',
             width: '165',
             height: '165',
-            sliceColors: ['#dcdcdc', '#3bafda', '#ffaa00', '#00b19d']
+            sliceColors: ['#dcdcdc', '#3bafda', '#333333', '#00b19d']
         });
 
 

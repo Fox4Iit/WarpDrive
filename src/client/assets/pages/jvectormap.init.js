@@ -19,7 +19,7 @@
 			hoverColor : false,
 			regionStyle : {
 				initial : {
-					fill : '#3bafda'
+					fill : '#00b19d'
 				}
 			},
 			 markerStyle: {
@@ -125,7 +125,7 @@
 			backgroundColor : 'transparent',
 			regionStyle : {
 				initial : {
-					fill : '#3bafda'
+					fill : '#00b19d'
 				}
 			}
 		});
@@ -135,7 +135,7 @@
 			backgroundColor : 'transparent',
 			regionStyle : {
 				initial : {
-					fill : '#3bafda'
+					fill : '#00b19d'
 				}
 			}
 		});
@@ -145,7 +145,7 @@
 			backgroundColor : 'transparent',
 			regionStyle : {
 				initial : {
-					fill : '#3bafda'
+					fill : '#00b19d'
 				}
 			}
 		});
@@ -155,7 +155,7 @@
 			backgroundColor : 'transparent',
 			regionStyle : {
 				initial : {
-					fill : '#3bafda'
+					fill : '#00b19d'
 				}
 			}
 		});
@@ -166,7 +166,7 @@
 			backgroundColor : 'transparent',
 			regionStyle : {
 				initial : {
-					fill : '#3bafda'
+					fill : '#00b19d'
 				}
 			}
 		});
@@ -177,7 +177,7 @@
 			backgroundColor : 'transparent',
 			regionStyle : {
 				initial : {
-					fill : '#3bafda'
+					fill : '#00b19d'
 				}
 			}
 		});
@@ -187,7 +187,7 @@
 			backgroundColor : 'transparent',
 			regionStyle : {
 				initial : {
-					fill : '#3bafda'
+					fill : '#00b19d'
 				}
 			}
 		});
@@ -197,7 +197,7 @@
 			backgroundColor : 'transparent',
 			regionStyle : {
 				initial : {
-					fill : '#3bafda'
+					fill : '#00b19d'
 				}
 			}
 		});

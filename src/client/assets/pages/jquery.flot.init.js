@@ -47,7 +47,7 @@
 					}
 				},
 				points : {
-					show : false
+					show : true
 				},
 				shadowSize : 0
 			},
@@ -56,8 +56,10 @@
 				hoverable : true,
 				clickable : true,
 				borderColor : borderColor,
-				borderWidth : 0,
-				labelMargin : 10
+				tickColor : "#f9f9f9",
+				borderWidth : 1,
+				labelMargin : 10,
+				backgroundColor : bgColor
 			},
 			legend : {
 				position : "ne",
@@ -72,15 +74,13 @@
 				height : 2
 			},
 			yaxis : {
-				tickColor : 'transparent',
-				tickLength: 0,
+				tickColor : '#f5f5f5',
 				font : {
 					color : '#bdbdbd'
 				}
 			},
 			xaxis : {
-				tickColor : '#transparent',
-				tickLength: 0,
+				tickColor : '#f5f5f5',
 				font : {
 					color : '#bdbdbd'
 				}
@@ -179,7 +179,7 @@
 			grid : {
 				show : true,
 				aboveData : false,
-				color : '#36404a',
+				color : '#dcdcdc',
 				labelMargin : 15,
 				axisMargin : 0,
 				borderWidth : 0,
@@ -201,8 +201,7 @@
 			yaxis : {
 				min : 0,
 				max : 100,
-				tickColor : '#transparent',
-				tickLength: 0
+				color : 'rgba(0,0,0,0.1)'
 			},
 			xaxis : {
 				show : false
@@ -292,10 +291,11 @@
 			grid : {
 				hoverable : true,
 				clickable : true,
-				tickColor : "transparent",
-				borderWidth : 0
+				tickColor : "#f9f9f9",
+				borderWidth : 1,
+				borderColor : "#eeeeee"
 			},
-			colors : ["#3bafda", "#f76397", "#34d3eb"],
+			colors : ["#00b19d", "#f76397", "#34d3eb"],
 			tooltip : true,
 			tooltipOpts : {
 				defaultTheme : false
@@ -314,7 +314,6 @@
 			},
 			yaxis : {
 				tickColor : '#f5f5f5',
-				tickLength: 0,
 				font : {
 					color : '#bdbdbd'
 				}
@@ -322,7 +321,6 @@
 			xaxis : {
 				ticks: ticks,
 				tickColor : '#f5f5f5',
-				tickLength: 0,
 				font : {
 					color : '#bdbdbd'
 				}
@@ -339,18 +337,18 @@
 		var downloads = [[0, 5], [1, 12], [2, 4], [3, 3], [4, 12], [5, 11], [6, 14]];
 		var plabels = ["Visits", "Pages/Visit"];
 		var pcolors = ['#00b19d', '#3bafda'];
-		var borderColor = 'transparent';
-		var bgColor = 'transparent';
+		var borderColor = '#f5f5f5';
+		var bgColor = '#fff';
 		this.createPlotGraph("#website-stats", uploads, downloads, plabels, pcolors, borderColor, bgColor);
 
 		//Pie graph data
 		var pielabels = ["Series 1", "Series 2", "Series 3"];
 		var datas = [20, 30, 15];
-		var colors = ["#3bafda", "#26c6da", "#80deea"];
+		var colors = ["#00b19d", "#26c6da", "#80deea"];
 		this.createPieGraph("#pie-chart #pie-chart-container", pielabels, datas, colors);
 
 		//real time data representation
-		var plot = this.createRealTimeGraph('#flotRealTime', this.randomData(), ['#3bafda']);
+		var plot = this.createRealTimeGraph('#flotRealTime', this.randomData(), ['#00b19d']);
 		plot.draw();
 		var $this = this;
 		function updatePlot() {
@@ -391,9 +389,9 @@ function($) {
 	$.FlotChart.init()
 }(window.jQuery);
 
-$(document).ready(function() {
 
-	
+
+$(document).ready(function() {
 
 	//------------- Ordered bars chart -------------//
 	$(function() {
@@ -450,7 +448,7 @@ $(document).ready(function() {
 				aboveData : false,
 				labelMargin : 5,
 				axisMargin : 0,
-				borderWidth : 0,
+				borderWidth : 1,
 				minBorderMargin : 5,
 				clickable : true,
 				hoverable : true,
@@ -475,19 +473,17 @@ $(document).ready(function() {
 			},
 			yaxis : {
 				tickColor : '#f5f5f5',
-				tickLength: 0,
 				font : {
 					color : '#bdbdbd'
 				}
 			},
 			xaxis : {
 				tickColor : '#f5f5f5',
-				tickLength: 0,
 				font : {
 					color : '#bdbdbd'
 				}
 			},
-			colors : ["#3bafda", "#26c6da", "#80deea"],
+			colors : ["#00b19d", "#80cbc4", "#80deea"],
 			tooltip : true, //activate tooltip
 			tooltipOpts : {
 				content : "%s : %y.0",

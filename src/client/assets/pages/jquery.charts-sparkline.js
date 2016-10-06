@@ -12,8 +12,8 @@ $( document ).ready(function() {
             width: $('#sparkline1').width(),
             height: '165',
             chartRangeMax: 50,
-            lineColor: '#3bafda',
-            fillColor: 'rgba(59,175,218,0.3)',
+            lineColor: '#00b19d',
+            fillColor: 'rgba(0, 177, 157, 0.3)',
             highlightLineColor: 'rgba(0,0,0,.1)',
             highlightSpotColor: 'rgba(0,0,0,.2)',
         });
@@ -35,14 +35,14 @@ $( document ).ready(function() {
             height: '165',
             barWidth: '10',
             barSpacing: '3',
-            barColor: '#3bafda'
+            barColor: '#00b19d'
         });
 
         $('#sparkline3').sparkline([20, 40, 30, 10], {
             type: 'pie',
             width: '165',
             height: '165',
-            sliceColors: ['#dcdcdc', '#3bafda', '#333333', '#00b19d']
+            sliceColors: ['#dcdcdc', '#00b19d', '#333333', '#3bafda']
         });
 
         $('#sparkline4').sparkline([0, 23, 43, 35, 44, 45, 56, 37, 40], {
@@ -50,7 +50,7 @@ $( document ).ready(function() {
             width: $('#sparkline1').width(),
             height: '165',
             chartRangeMax: 50,
-            lineColor: '#3bafda',
+            lineColor: '#00b19d',
             fillColor: 'transparent',
             highlightLineColor: 'rgba(0,0,0,.1)',
             highlightSpotColor: 'rgba(0,0,0,.2)'
@@ -73,7 +73,7 @@ $( document ).ready(function() {
             height: '165',
             barWidth: '10',
             barSpacing: '3',
-            barColor: '#00b19d'
+            barColor: '#5d9cec'
         });
 
         $('#sparkline6').sparkline([3, 6, 7, 8, 6, 4, 7, 10, 12, 7, 4, 9, 12, 13, 11, 12], {
@@ -121,8 +121,8 @@ $( document ).ready(function() {
                         width: $('#sparkline1').width(),
                         height: '165',
                         chartRangeMax: 50,
-                        lineColor: '#3bafda',
-                        fillColor: 'rgba(59,175,218,0.3)',
+                        lineColor: '#00b19d',
+                        fillColor: 'rgba(0, 177, 157, 0.3)',
                         highlightLineColor: 'rgba(24,147,126,.1)',
                         highlightSpotColor: 'rgba(24,147,126,.2)',
                     });

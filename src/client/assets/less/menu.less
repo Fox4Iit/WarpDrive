@@ -96,7 +96,7 @@ File: Topbar,Left-sidebar,Right-sidebar
 
 .notifi-title {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  color: @white;
+  color: #000000;
   font-size: 16px;
   font-weight: 400;
   padding: 5px 0px 10px;
@@ -651,7 +651,7 @@ body.fixed-left {
 .side-bar {
   -moz-transition: all 200ms ease-out;
   -webkit-transition: all 200ms ease-out;
-  background-color: darken(@dark,5%);
+  background-color: @white;
   box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.1);
   display: block;
   overflow-y: auto;
@@ -662,8 +662,6 @@ body.fixed-left {
   .nav.nav-tabs + .tab-content {
     margin-bottom: 0px;
     padding: 20px;
-    background-color: transparent;
-    border: 0;
   }
 
   .tabs li.tab a {
@@ -672,6 +670,7 @@ body.fixed-left {
 }
 
 .right-bar {
+  background: @white !important;
   position: fixed !important;
   z-index: 99 !important;
   h4 {
@@ -713,7 +712,7 @@ body.fixed-left {
   }
   .list-group-item {
     span.name {
-      color: fade(@white,60%);
+      color: #707780;
       display: inline-block;
       float: left;
       overflow: hidden;
@@ -741,3 +740,4 @@ body.fixed-left {
 body.fixed-left-void {
   min-height: 1140px;
 }
+
